@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation = "http://www.springframework.org/schema/beans
+            https://www.springframework.org/schema/beans/spring-beans.xsd">
+            <bean id="collection" class="depenedencyInjection1a.Collection">
+            
+            	 <property name="name">
+            		<list>
+            			<value>Shashwat</value>
+            			<value>Rahul</value>
+            			<value>Kunal</value>
+            		</list>
+            	</property>
+            	
+            	<property name="fruits">
+            		<list>
+            			<value>Apple</value>
+            			<value>Orange</value>
+            			<value>Banana</value>
+            		</list>
+            	</property>
+            	
+            	<property name="veggies">
+            		<set>
+            			<value>Potato</value>
+            			<value>Tomato</value>
+            			<value>Cucumber</value>
+            		</set>
+            	</property>
+            	
+            	<property name="countryCap">
+            		<map>
+            			<entry key="INDIA" value="Delhi"></entry>
+            			<entry key="ABC" value="XYZ"></entry>
+            			<entry key="PQR" value="MNO"></entry>
+            		</map>
+            	</property>
+            </bean>
+</beans>
